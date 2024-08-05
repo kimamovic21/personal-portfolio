@@ -11,13 +11,13 @@ const Skills = () => {
 
         <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
 
-            <p className='font-xl tracking-widest uppercase text-[#5651e5]'>
+            <h2 className='mt-6 text-xl tracking-widest uppercase text-[#5651e5]'>
                 Skills
-            </p>
-
-            <h2 className='py-4'>
-                What I can do
             </h2>
+
+            <h3 className='py-4 text-2xl'>
+                What I can do
+            </h3>
 
             <div className='mx-[1%] grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
                 <Skill 

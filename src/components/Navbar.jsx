@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa'; 
 import { FaXTwitter } from 'react-icons/fa6';
@@ -56,31 +56,31 @@ const Navbar = () => {
         
            <div>
                <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-                   <a href='/#home'>
+                   <Link to='/'>
                        <li className='ml-10 text-sm uppercase hover:border-b hover:border-slate-900'>
                            Home
                         </li>
-                   </a>
-                   <a href='/#about'>
+                   </Link>
+                   <Link to='/about'>
                        <li className='ml-10 text-sm uppercase hover:border-b hover:border-slate-900'>
                            About
                         </li>
-                   </a>
-                   <a to='/#skills'>
+                   </Link>
+                   <Link to='/skills'>
                        <li className='ml-10 text-sm uppercase hover:border-b hover:border-slate-900'>
                            Skills
                         </li>
-                   </a>
-                   <a to='/#projects'>
+                   </Link>
+                   <Link to='/projects'>
                        <li className='ml-10 text-sm uppercase hover:border-b hover:border-slate-900'>
                            Projects
                         </li>
-                   </a>
-                   <a to='/#contact'>
+                   </Link>
+                   <Link to='/contact'>
                        <li className='ml-10 text-sm uppercase hover:border-b hover:border-slate-900'>
                            Contact
                         </li>
-                   </a>
+                   </Link>
                </ul>
            </div>
 
@@ -121,50 +121,50 @@ const Navbar = () => {
 
                 <div className='py-4 flex flex-col'>
                     <ul className='uppercase max-w-[20%]'>
-                        <a href='/#home'>
+                        <Link to='/'>
                             <li 
                                 onClick={() => setNav(false)}
                                 className='py-2 text-sm hover:border-b hover:border-slate-900'
                             >
                                 Home
                             </li>
-                        </a>
+                        </Link>
 
-                        <a href='/#about'>
+                        <Link to='/about'>
                             <li 
                                 onClick={() => setNav(false)}
                                 className='py-2 text-sm hover:border-b hover:border-slate-900'
                             >
                                 About
                             </li>
-                        </a>
+                        </Link>
 
-                        <a href='/#skills'>
+                        <Link to='/skills'>
                             <li 
                                 onClick={() => setNav(false)}
                                 className='py-2 text-sm hover:border-b hover:border-slate-900'
                             >
                                 Skills
                             </li>
-                        </a>
+                        </Link>
 
-                        <a href='/#projects'>
+                        <Link href='/projects'>
                             <li 
                                 onClick={() => setNav(false)}
                                 className='py-2 text-sm hover:border-b hover:border-slate-900'
                             >
                                 Projects
                             </li>
-                        </a>
+                        </Link>
 
-                        <a href='/#contact'>
+                        <Link href='/contact'>
                             <li 
                                 onClick={() => setNav(false)}
                                 className='py-2 text-sm hover:border-b hover:border-slate-900'
                             >
                                 Contact
                             </li>
-                        </a>
+                        </Link>
                     </ul>
 
                     <div className='pt-10'>
