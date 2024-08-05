@@ -19,7 +19,7 @@ const Main = () => {
                 </p>
 
                 <h1 className='py-3 text-gray-700'>
-                    Hi, I&apos;am <span className='text-[#5651e5]'>Kerim</span>
+                    Hi, I&apos;m <span className='text-[#5651e5]'>Kerim</span>
                 </h1>
 
                 <h2 className='py-3 text-gray-700'>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa'; 
 import { FaXTwitter } from 'react-icons/fa6';
@@ -43,7 +43,7 @@ const Navbar = () => {
   }, [navigate]);
                         
   return (
-    <div style={{ backgroundColor: `${navBg}` }} className={shadow ? "fixed w-full h-20 z-[100]" : "fixed w-full h-20 z-[100]"}>
+    <div style={{ backgroundColor: `${navBg}` }} className={shadow ? "fixed w-full shadow-xl h-20 z-[100]" : "fixed w-full h-20 z-[100]"}>
 
         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
             <img 
@@ -56,38 +56,38 @@ const Navbar = () => {
         
            <div>
                <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-                   <Link to='/'>
+                   <a href='/#home'>
                        <li className='ml-10 text-sm uppercase hover:border-b hover:border-slate-900'>
                            Home
                         </li>
-                   </Link>
-                   <Link to='/#about'>
+                   </a>
+                   <a href='/#about'>
                        <li className='ml-10 text-sm uppercase hover:border-b hover:border-slate-900'>
                            About
                         </li>
-                   </Link>
-                   <Link to='/#skills'>
+                   </a>
+                   <a to='/#skills'>
                        <li className='ml-10 text-sm uppercase hover:border-b hover:border-slate-900'>
                            Skills
                         </li>
-                   </Link>
-                   <Link to='/#projects'>
+                   </a>
+                   <a to='/#projects'>
                        <li className='ml-10 text-sm uppercase hover:border-b hover:border-slate-900'>
                            Projects
                         </li>
-                   </Link>
-                   <Link to='/#contact'>
+                   </a>
+                   <a to='/#contact'>
                        <li className='ml-10 text-sm uppercase hover:border-b hover:border-slate-900'>
                            Contact
                         </li>
-                   </Link>
+                   </a>
                </ul>
            </div>
 
            <div className='md:hidden cursor-pointer' onClick={handleNav}>
                 <AiOutlineMenu 
                     size={30} 
-                    style={{color: `${linkColor}`}}
+                    style={{ color: `${linkColor}` }}
                 />
            </div>
 
@@ -121,50 +121,50 @@ const Navbar = () => {
 
                 <div className='py-4 flex flex-col'>
                     <ul className='uppercase max-w-[20%]'>
-                        <Link to='/'>
+                        <a href='/#home'>
                             <li 
                                 onClick={() => setNav(false)}
                                 className='py-2 text-sm hover:border-b hover:border-slate-900'
                             >
                                 Home
                             </li>
-                        </Link>
-                        
-                        <Link to='/#about'>
+                        </a>
+
+                        <a href='/#about'>
                             <li 
                                 onClick={() => setNav(false)}
                                 className='py-2 text-sm hover:border-b hover:border-slate-900'
                             >
                                 About
                             </li>
-                        </Link>
+                        </a>
 
-                        <Link to='/#skills'>
+                        <a href='/#skills'>
                             <li 
                                 onClick={() => setNav(false)}
                                 className='py-2 text-sm hover:border-b hover:border-slate-900'
                             >
                                 Skills
                             </li>
-                        </Link>
+                        </a>
 
-                        <Link to='/#projects'>
+                        <a href='/#projects'>
                             <li 
                                 onClick={() => setNav(false)}
                                 className='py-2 text-sm hover:border-b hover:border-slate-900'
                             >
                                 Projects
                             </li>
-                        </Link>
+                        </a>
 
-                        <Link to='/#contact'>
+                        <a href='/#contact'>
                             <li 
                                 onClick={() => setNav(false)}
                                 className='py-2 text-sm hover:border-b hover:border-slate-900'
                             >
                                 Contact
                             </li>
-                        </Link>
+                        </a>
                     </ul>
 
                     <div className='pt-10'>
