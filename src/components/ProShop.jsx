@@ -52,7 +52,7 @@ const ProShop = () => {
                   <RiRadioButtonFill className='pr-1' /> Tailwind CSS
                 </p>
                 <p className='text-gray-600 py-2 flex items-center'>
-                  <RiRadioButtonFill className='pr-1' /> Javascript
+                  <RiRadioButtonFill className='pr-1' /> Redux Toolkit
                 </p>
                 <p className='text-gray-600 py-2 flex items-center'>
                   <RiRadioButtonFill className='pr-1' /> Node.js

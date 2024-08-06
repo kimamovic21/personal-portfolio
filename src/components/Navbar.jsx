@@ -148,7 +148,7 @@ const Navbar = () => {
                             </li>
                         </Link>
 
-                        <Link href='/projects'>
+                        <Link to='/projects'>
                             <li 
                                 onClick={() => setNav(false)}
                                 className='py-2 text-sm hover:border-b hover:border-slate-900'
@@ -157,7 +157,7 @@ const Navbar = () => {
                             </li>
                         </Link>
 
-                        <Link href='/contact'>
+                        <Link to='/contact'>
                             <li 
                                 onClick={() => setNav(false)}
                                 className='py-2 text-sm hover:border-b hover:border-slate-900'

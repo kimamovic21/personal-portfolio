@@ -7,6 +7,7 @@ import Skills from "./components/Skills"
 import Projects from "./components/Projects"
 import PropertyPulse from "./components/PropertyPulse"
 import ProShop from "./components/ProShop"
+import Contact from "./components/Contact"
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/projects' element={<Projects />} />
         <Route path="/projects/pro-shop" element={<ProShop />} />
         <Route path="/projects/property-pulse" element={<PropertyPulse />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   )
