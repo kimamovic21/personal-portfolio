@@ -10,7 +10,7 @@ const InstagramIcon = styled(FaInstagram)`
 
 const Contact = () => {
   return (
-    <div id='contact' className='w-full lg:h-screen'>
+    <div id='contact' className='w-full'>
 
         <div className='max-w-[1240px] mx-auto px-2 py-16 w-full'>
 

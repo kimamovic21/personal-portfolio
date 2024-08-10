@@ -8,6 +8,7 @@ import Projects from "./components/Projects"
 import PropertyPulse from "./components/PropertyPulse"
 import ProShop from "./components/ProShop"
 import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/projects/property-pulse" element={<PropertyPulse />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
