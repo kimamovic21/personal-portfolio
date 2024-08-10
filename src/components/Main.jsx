@@ -71,7 +71,7 @@ const Main = () => {
                     </a>
 
                     <a 
-                        href="https://www.facebook.com/k_imamovic" 
+                        href="https://www.instagram.com/k_imamovic" 
                         target='_blank'
                         rel="noopener noreferrer"    
                     >
