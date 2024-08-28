@@ -1,5 +1,6 @@
 import { FaLinkedinIn, FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import { ReactTyped } from "react-typed";
 import styled from 'styled-components';
 
 const InstagramIcon = styled(FaInstagram)`
@@ -23,24 +24,26 @@ const Main = () => {
                 </h1>
 
                 <h2 className='py-3 text-gray-700'>
-                    Junior Web Developer
+                    <ReactTyped 
+                        strings={["Junior Web Developer"]} 
+                        typeSpeed={60} 
+                        backSpeed={60}
+                        loop
+                    />
                 </h2>
 
                 <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
-                    Welcome to my portfolio web page. I&apos;m learning MERN Stack Web technologies. 
+                    Welcome to my portfolio web page. I&apos;m exploring and working in MERN Stack Web technologies. 
                 </p>
 
-                <div className='flex items-center justify-between w-2/3 m-auto py-4'>
+                <div className='flex items-center justify-between w-2/3 m-auto py-4 text-xs sm:text-sm md:text-xl lg:text-2xl'>
                     <a 
                         href="https://www.linkedin.com/in/kerimimamovic/" 
                         target='_blank'
                         rel="noopener noreferrer"    
                     >
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaLinkedinIn 
-                                size={20} 
-                                className='text-blue-700'
-                            />
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 lg:p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <FaLinkedinIn className='text-blue-700' />
                         </div>
                     </a>
 
@@ -49,11 +52,8 @@ const Main = () => {
                         target='_blank'
                         rel="noopener noreferrer"    
                     >
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaGithub 
-                                size={20} 
-                                className='text-black' 
-                            />
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 lg:p-6  cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <FaGithub className='text-black' />
                         </div>
                     </a>
 
@@ -62,11 +62,8 @@ const Main = () => {
                         target='_blank'
                         rel="noopener noreferrer"    
                     >
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaFacebook 
-                                size={20} 
-                                className='text-blue-700'
-                            />
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 lg:p-6  cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <FaFacebook className='text-blue-700' />
                         </div>
                     </a>
 
@@ -75,8 +72,8 @@ const Main = () => {
                         target='_blank'
                         rel="noopener noreferrer"    
                     >
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <InstagramIcon size={20} />
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 lg:p-6  cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <InstagramIcon />
                         </div>
                     </a>
 
@@ -85,11 +82,8 @@ const Main = () => {
                         target='_blank'
                         rel="noopener noreferrer"    
                     >
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaXTwitter 
-                                size={20} 
-                                className='text-black'
-                            />
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 lg:p-6  cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <FaXTwitter className='text-black' />
                         </div>
                     </a>
                 </div>
