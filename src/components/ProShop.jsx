@@ -33,7 +33,7 @@ const ProShop = () => {
                     </button>
             </a>
             <a 
-                href='https://udemy-mern-course-ecommerce-platform.onrender.com/' 
+                href='https://udemy-mern-course-ecommerce-platform-08it.onrender.com/' 
                 target='_blank'> 
                     <button className='px-8 py-2 mt-4'>
                         Live Demo
