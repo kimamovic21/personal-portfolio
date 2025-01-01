@@ -7,9 +7,14 @@ const ProShop = () => {
   return (
     <>
       <Navbar />
-      <div 
+      <div
         className='relative flex flex-col justify-between gap-20'
-        style={{ backgroundImage: `url(${ProShopImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
+        style={{
+          backgroundImage: `url(${ProShopImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
       >
         <div className='absolute inset-0 bg-black opacity-80'></div>
         <div className='relative mt-24 ml-14 text-gray-700 p-2'>
@@ -20,24 +25,25 @@ const ProShop = () => {
           <div className='col-span-4'>
             <h2 className='text-gray-100 mb-10'>Overview</h2>
             <p className='text-gray-100 text-justify'>
-            The eCommerce platform is a full-featured online store built with the MERN stack (MongoDB, Express.js, React, Node.js). 
-            It includes user authentication, product management, a shopping cart, and secure checkout with PayPal for developers integration. 
-            The admin dashboard allows for managing users, products, and orders. The platform is designed for a seamless user 
-            experience across all devices.
+              The eCommerce platform is a full-featured online store built with
+              the MERN stack (MongoDB, Express.js, React, Node.js). It includes
+              user authentication, product management, a shopping cart, and
+              secure checkout with PayPal for developers integration. The admin
+              dashboard allows for managing users, products, and orders. The
+              platform is designed for a seamless user experience across all
+              devices.
             </p>
-            <a 
-                href='https://github.com/kimamovic21/udemy-mern-course-ecommerce-platform-traversymedia' 
-                target='_blank'> 
-                    <button className='px-8 py-2 mt-4 mr-8'>
-                        Github Code
-                    </button>
+            <a
+              href='https://github.com/kimamovic21/udemy-mern-course-ecommerce-platform-traversymedia'
+              target='_blank'
+            >
+              <button className='px-8 py-2 mt-4 mr-8'>Github Code</button>
             </a>
-            <a 
-                href='https://udemy-mern-course-ecommerce-platform-08it.onrender.com/' 
-                target='_blank'> 
-                    <button className='px-8 py-2 mt-4'>
-                        Live Demo
-                    </button>
+            <a
+              href='https://udemy-mern-course-ecommerce-platform-08it.onrender.com/'
+              target='_blank'
+            >
+              <button className='px-8 py-2 mt-4'>Live Demo</button>
             </a>
           </div>
 
@@ -48,7 +54,7 @@ const ProShop = () => {
                 <p className='text-gray-600 py-2 flex items-center'>
                   <RiRadioButtonFill className='pr-1' /> React.js
                 </p>
-                <p className='text-gray-600 py-2 flex items-center'> 
+                <p className='text-gray-600 py-2 flex items-center'>
                   <RiRadioButtonFill className='pr-1' /> Tailwind CSS
                 </p>
                 <p className='text-gray-600 py-2 flex items-center'>
@@ -67,12 +73,14 @@ const ProShop = () => {
             </div>
           </div>
           <Link to='/projects'>
-            <p className='underline cursor-pointer text-gray-100 hover:no-underline'>Back to Projects</p>
+            <p className='underline cursor-pointer text-gray-100 hover:no-underline'>
+              Back to Projects
+            </p>
           </Link>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ProShop
+export default ProShop;
