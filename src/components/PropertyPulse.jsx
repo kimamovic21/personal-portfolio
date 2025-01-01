@@ -7,9 +7,14 @@ const PropertyPulse = () => {
   return (
     <>
       <Navbar />
-      <div 
+      <div
         className='relative flex flex-col justify-between gap-20'
-        style={{ backgroundImage: `url(${PropertyPulseImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
+        style={{
+          backgroundImage: `url(${PropertyPulseImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
       >
         <div className='absolute inset-0 bg-black opacity-80'></div>
         <div className='relative mt-24 ml-14 text-gray-700 p-2'>
@@ -20,28 +25,26 @@ const PropertyPulse = () => {
           <div className='col-span-4'>
             <h2 className='text-gray-100 mb-10'>Overview</h2>
             <p className='text-gray-100 text-justify'>
-              This app was built using Next.js. Users are able to create and search properties
-              and retrieve a list of active properties that currently for rent. You will
-              be able to view property information as well as the specific
-              location of the property integrated with the Google Geolocation API. User
-              authentication is available so you can Sign up & Sign in to your
-              account with an email address in order to save your favorite
-              properties. 
+              This app was built using Next.js. Users are able to create and
+              search properties and retrieve a list of active properties that
+              currently for rent. You will be able to view property information
+              as well as the specific location of the property integrated with
+              the Google Geolocation API. User authentication is available so
+              you can Sign up & Sign in to your account with an email address in
+              order to save your favorite properties.
             </p>
-            <a 
-                href='https://github.com/kimamovic21/udemy-nextjs-course-property-pulse-traversymedia/' 
-                target='_blank'> 
-                    <button className='px-8 py-2 mt-4 mr-8'>
-                        Github Code
-                    </button>
+            <a
+              href='https://github.com/kimamovic21/udemy-nextjs-course-property-pulse-traversymedia/'
+              target='_blank'
+            >
+              <button className='px-8 py-2 mt-4 mr-8'>Github Code</button>
             </a>
-            {/* <a 
-                href='' 
-                target='_blank'> 
-                    <button className='px-8 py-2 mt-4'>
-                        Live Demo
-                    </button>
-            </a> */}
+            <a
+              href='https://udemy-nextjs-course-property-pulse-traversymedia-v2.vercel.app'
+              target='_blank'
+            >
+              <button className='px-8 py-2 mt-4'>Live Demo</button>
+            </a>
           </div>
 
           <div className='col-span-4 md:col-span-1 shadow-md bg-gray-100 shadow-gray-400 rounded-xl p-4'>
@@ -51,7 +54,7 @@ const PropertyPulse = () => {
                 <p className='text-gray-600 py-2 flex items-center'>
                   <RiRadioButtonFill className='pr-1' /> Next.js
                 </p>
-                <p className='text-gray-600 py-2 flex items-center'> 
+                <p className='text-gray-600 py-2 flex items-center'>
                   <RiRadioButtonFill className='pr-1' /> Tailwind
                 </p>
                 <p className='text-gray-600 py-2 flex items-center'>
@@ -70,12 +73,14 @@ const PropertyPulse = () => {
             </div>
           </div>
           <Link to='/projects'>
-            <p className='underline cursor-pointer text-gray-100 hover:no-underline'>Back to Projects</p>
+            <p className='underline cursor-pointer text-gray-100 hover:no-underline'>
+              Back to Projects
+            </p>
           </Link>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default PropertyPulse
+export default PropertyPulse;
